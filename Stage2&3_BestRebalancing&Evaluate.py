@@ -145,7 +145,7 @@ estimators.append(('DT', DT_model))
 estimators.append(('XGB', XGB_model))
 ensemble_base = VotingClassifier(estimators=estimators)
 # # Apply SPE+
-ensemble_EXP3 = SelfPacedEnsembleClassifier(random_state=42, base_estimator=ensemble_base, n_jobs=-1, n_estimators=13)
+ensemble_EXP3 = SelfPacedEnsembleClassifier(random_state=42, base_estimator=ensemble_base, n_jobs=-1)
 
 
 
